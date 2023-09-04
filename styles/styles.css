@@ -1,0 +1,1005 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+button, input{
+    cursor: pointer;
+    }
+
+/*----------------Header---------------*/
+
+
+.container button#contact{
+display: none;
+
+}
+
+.header {
+    padding-top: 20px;
+    background-color: #feffffd5;
+    width: 375px;
+    height: 65px;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+#navh {
+    position: absolute;
+    top: -250px;
+    right: 0px;
+    background-color: #feffffd5;
+    padding: 25px 50px;
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+    border-radius: 0px 0px 0px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#navh ul li a:visited {
+    color: black;
+}
+
+.container nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.container label{
+cursor: pointer;
+}
+
+#menu{
+    display: none;
+}
+
+#menu:checked ~ #menu-icon {
+    right: 400px;
+    top: 20px;
+}
+
+/* Cambia el z-index para que el menú esté por encima del contenido */
+#menu:checked ~ #navh {
+    top: 0;
+    margin-top: 65.2px;
+    z-index: 1;
+}
+
+/*----------------Cuerpo Principal---------------*/
+.cuerpo__main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    align-content: center;
+
+}
+
+/*----------------Section 1---------------*/
+#fotopaddle {
+    padding-top: 60px;
+    width: 300px;
+}
+
+.maintext {
+    padding: 15px;
+    width: 300px;
+    text-align: right;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.maintext h1 {
+    padding-top: 35px;
+    padding-bottom: 20px;
+    color: #232851;
+    font-weight: 700;
+}
+
+.maintext p {
+    line-height: 26.01px;
+    font-size: 16.56px;
+}
+
+#contact {
+    margin-top: 20px;
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 25px;
+    background-color: #8B48BF;
+    color: white;
+    font-weight: lighter;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*----------------Section 2---------------*/
+.card__celeste {
+    margin-top: 25px;
+    width: 375px;
+    background-color: #3CDDF3;
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-self: center;
+}
+
+.card__celeste h2 {
+    font-size: 30px;
+    font-weight: lighter;
+    padding-bottom: 30px;
+}
+
+.card__celeste p {
+    font-size: 14px;
+}
+
+/*----------------Section (3) Tarjetas ---------------*/
+.tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-top: 45px;
+    width: 350px;
+    height: 450px;
+    margin-bottom: 160px;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 250px;
+    align-items: flex-end;
+}
+
+.headert {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    align-content: flex-end;
+    margin-bottom: -160px;
+}
+
+.headert .num {
+    background-color: #8B48BF;
+    height: 45px;
+    width: 70px;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.headert h3 {
+    background-color: #8B48BF4D;
+    height: 45px;
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    z-index: 1;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 55px;
+    margin-left: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta .text {
+    font-size: 15px;
+    padding: 30px;
+    color: #B3B2B7;
+    line-height: 22px;
+}
+
+/*----------------Carrousel de Articulos ---------------*/
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    gap: 20px;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/*----------------Section (4) Articulos ---------------*/
+.section4 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    width: 340px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.card__article {
+    margin-top: 120px;
+    align-items: center;
+    text-align: center;
+}
+
+.card__article h3 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.article {
+    background-color: #FAFAFA;
+    position: relative;
+    padding-top: 30px;
+    margin-top: 80px;
+    display: inline-block;
+    white-space: normal;
+    margin-bottom: 25px;
+    flex: 0 0 calc(100% - 20px);
+    scroll-snap-align: start;
+}
+
+.card__article button {
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 25px;
+    background-color: #8B48BF;
+    color: white;
+    font-weight: lighter;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.img__article {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    bottom: 140px;
+}
+
+.img__article img {
+    width: 70px;
+    height: 70px;
+    align-content: center;
+    object-fit: cover;
+}
+
+.text__article h4 {
+    font-size: 17px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.text__article p {
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: #B3B2B7;
+    line-height: 26px;
+    padding: 10px;
+}
+
+/*----------------Section 5 ---------------*/
+.card__celeste2 {
+    margin-top: 25px;
+    width: 375px;
+    background-color: #3CDDF3;
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-self: center;
+}
+
+.card__celeste2 h2 {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 500;
+    padding: 0px 30px;
+    line-height: 52px;
+}
+
+.boton {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.card__celeste2 button {
+    margin-top: 50px;
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 25px;
+    background-color: #232C50;
+    color: white;
+    font-weight: lighter;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*---------------- Footer ---------------*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 375px;
+    height: 425px;
+    background-color: #1E1E26;
+}
+
+/*---------------- Footer Input ---------------*/
+.input {
+    margin-top: 50px;
+}
+
+#busqueda {
+    height: 40px;
+    width: 230px;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+input::placeholder {
+    color: #B3B2B7;
+}
+
+#submit {
+    background-color: #8B48BF;
+    height: 40px;
+    width: 65px;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    margin-left: 12px;
+}
+
+/*---------------- Footer Navs ---------------*/
+.fnavs {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 13px;
+    font-weight: lighter;
+    line-height: 28px;
+    margin-top: 30px;
+}
+
+.navleft {
+    padding-left: 20px;
+}
+
+.navright {
+    padding-right: 30px;
+}
+
+.navleft ul li a:visited {
+    color: white;
+}
+
+.navright ul li a:visited {
+    color: white;
+}
+
+/*---------------- Footer Icons Redes ---------------*/
+.footer__iconos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    width: 310px;
+}
+
+.iconos {
+    width: 370px;
+    white-space: nowrap;
+    margin-top: 15px;
+}
+
+.iconos a img {
+    padding: 0px 24px;
+}
+
+/*---------------- Footer Copyright ---------------*/
+
+.copyright{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgcp img{
+    width: 100px;
+}
+
+.copyright h5{
+    margin-top: 25px;
+    font-size: 10px;
+    color: #8C8C94;
+    font-weight: lighter;
+}
+
+@media screen and (min-width: 768px) {
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1000px; /* Reestablecemos la altura a automática */
+        height: 130px;
+        position: relative;
+        top: 0;
+    position: sticky;
+    z-index: 100;
+    background-color: none;
+    border: none;
+    box-shadow: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .container button#contact{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin-left: 670px;
+        margin-bottom: 50px;
+        }
+
+
+    #menu-icon {
+        display: none; /* Ocultar el ícono de hamburguesa */
+    }
+
+    .container img{
+        margin-left: 50px;
+        /* Puedes ajustar el ancho del logo si es necesario */
+    }
+
+    .header-nav {
+        display: flex;
+        align-items: center;
+       
+    }
+
+    .header-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        z-index: 101;
+        
+    }
+
+    #navh {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color:#a8a8a800;
+    padding: 0px 0px;
+    transition: none;
+    z-index: -1;
+    border-radius: none;
+    box-shadow: none;
+    }
+
+    .container nav ul{
+        margin-top: 9px;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        width: 1000px;
+        height: 130px;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        font-size: 13px;
+        
+    }
+
+
+    .cuerpo__main {
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+
+    /*----------------Section 1---------------*/
+
+.section__1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-arround;
+    align-items: center;
+
+}
+
+#fotopaddle {
+    padding-top: 60px;
+    width: 400px;
+    margin-right: 60px;
+}
+
+.maintext {
+    padding: 15px;
+    width: 400px;
+    text-align: right;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 55px;
+}
+
+.maintext h1 {
+    padding-top: 35px;
+    padding-bottom: 20px;
+    color: #232851;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.maintext p {
+    line-height: 26.01px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#contact {
+    margin-top: 50px;
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 25px;
+    background-color: #8B48BF;
+    color: white;
+    font-weight: lighter;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*----------------Section 2---------------*/
+.card__celeste {
+    margin-top: 85px;
+    width: 1000px;
+    background-color: #8B48BF;
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+}
+
+.card__celeste h2 {
+    font-size: 28px;
+    font-weight: lighter;
+    padding-bottom: 10px;
+    width: 350px;
+    height: 80px;
+    text-align: left;
+    margin-left: 100px;
+
+}
+
+.card__celeste p {
+    font-size: 15px;
+    width: 300px;
+    margin-left: 130px;
+}
+
+
+/*----------------Section (3) Tarjetas ---------------*/
+.tarjetas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    margin-top: 45px;
+    width: 1000px;
+    height: 450px;
+    margin-bottom: 0px;
+    align-content: center;
+    margin-top: 80px;
+    margin-right: 20px;
+}
+
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    height: 200px;
+    align-items: flex-end;
+    margin: 0px 40px;
+}
+
+.headert {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    align-content: flex-end;
+    margin-bottom: -160px;
+}
+
+.headert .num {
+    background-color: #8B48BF;
+    height: 45px;
+    width: 70px;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 70px;
+}
+
+
+.headert h3 {
+    background-color: white;
+    height: 45px;
+    width: 420px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    z-index: 1;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 125px;
+    margin-left: 30px;
+    box-shadow: none;
+}
+
+.tarjeta .text {
+    font-size: 15px;
+    padding: 20px;
+    color: #B3B2B7;
+    line-height: 22px;
+    width:450px;
+    margin-right: -85px;
+}
+
+/*----------------Carrousel de Articulos ---------------*/
+.carousel-container {
+    width: 100%;
+    overflow:visible;
+    margin-bottom: 100px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: none;
+    scroll-snap-type: none;
+    -webkit-overflow-scrolling: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    gap: 20px;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/*----------------Section (4) Articulos ---------------*/
+.section4 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    width: 340px;
+    position: relative;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+.card__article {
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.card__article h3 {
+    font-size: 34px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: #242E53;
+}
+
+.article {
+    background-color: #FAFAFA;
+    position: relative;
+    padding-top: 30px;
+    margin-top: 80px;
+    display: inline-block;
+    white-space: normal;
+    margin-bottom: 25px;
+    flex: 300px;
+    scroll-snap-align: start;
+}
+
+.card__article button {
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 25px;
+    background-color: #8B48BF;
+    color: white;
+    font-weight: lighter;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.img__article {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    bottom: 170px;
+}
+
+.img__article img {
+    width: 70px;
+    height: 70px;
+    align-content: center;
+    object-fit: cover;
+}
+
+.text__article h4 {
+    font-size: 17px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.text__article p {
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: #B3B2B7;
+    line-height: 26px;
+    padding: 10px;
+}
+
+
+/*----------------Section 5 ---------------*/
+.card__celeste2 {
+    margin-top: 25px;
+    width: 1000px;
+    background-color:#8B48BF;
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-self: center;
+    align-content: center;
+}
+
+.card__celeste2 h2 {
+    font-size: 35px;
+    text-align: left;
+    font-weight: 500;
+    padding: 0px 30px;
+    line-height: 52px;
+    width: 450px;
+    margin-left: 50px;
+}
+
+.boton {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+}
+
+.card__celeste2 button {
+    margin-top: 25px;
+    margin-left: 250px;
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color:#8B48BF;
+    font-weight: lighter;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*---------------- Footer ---------------*/
+.footer {
+    display: inline;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 240px;
+    background-color: #1E1E26;
+    justify-content: space-between;
+    position: relative;
+}
+
+/*---------------- Footer Input ---------------*/
+.input {
+    margin-top: 50px;
+    margin-left: 680px;
+    
+}
+
+#busqueda {
+    height: 40px;
+    width: 190px;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    display: inline;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+input::placeholder {
+    color: #B3B2B7;
+}
+
+#submit {
+    background-color: #8B48BF;
+    height: 40px;
+    width: 65px;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    margin-left: 12px;
+    position:relative;
+    top: 10px;
+    left: 20px;
+}
+
+/*---------------- Footer Navs ---------------*/
+.fnavs {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 13px;
+    font-weight: lighter;
+    line-height: 30px;
+    margin-top: 0px;
+    font-size: 15px;
+    top: 60px;
+}
+
+.navleft {
+    padding-left: 20px;
+    position: relative;
+    bottom: 30px;
+}
+
+.navright {
+    padding-left: 80px;
+    padding-right: 30px;
+    position: relative;
+    bottom: 30px;
+}
+
+.navleft ul li a:visited {
+    color: white;
+}
+
+.navright ul li a:visited {
+    color: white;
+}
+
+/*---------------- Footer Icons Redes ---------------*/
+.footer__iconos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    width: 310px;
+    position: relative;
+    left: 98px;
+    bottom: 105px;
+}
+
+.iconos {
+    width: 370px;
+    white-space: nowrap;
+    margin-top: 15px;
+   
+}
+
+.iconos a img {
+    padding: 0px 5px;
+}
+
+/*---------------- Footer Copyright ---------------*/
+
+.copyright{
+    margin-top: 40px;
+    display: inline;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+}
+
+.imgcp img{
+    width: 100px;
+    position: absolute;
+   bottom: 230px;
+   left: 100px;
+}
+
+.copyright h5{
+    display: flex;
+    margin-top: 25px;
+    font-size: 10px;
+    color: #8C8C94;
+    font-weight: lighter;
+    position: relative;
+    bottom: 120px;
+    left: 790px;
+}
+
+
+}
