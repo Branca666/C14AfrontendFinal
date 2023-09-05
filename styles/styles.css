@@ -51,6 +51,11 @@ display: none;
     z-index: -1;
     border-radius: 0px 0px 0px 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+#navh ul li a:active{
+    color: black;
 }
 
 #navh ul li a:visited {
@@ -61,6 +66,7 @@ display: none;
     display: flex;
     flex-direction: column;
     gap: 1em;
+    
 }
 
 .container label{
@@ -85,7 +91,7 @@ cursor: pointer;
 
 /*----------------Cuerpo Principal---------------*/
 .cuerpo__main {
-    width: 100%;
+    width: 375px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -520,6 +526,11 @@ input::placeholder {
         
     }
 
+    #navh ul li a{
+        color: black;
+    }
+    
+
     #navh {
     position: absolute;
     top: 0px;
@@ -530,6 +541,7 @@ input::placeholder {
     z-index: -1;
     border-radius: none;
     box-shadow: none;
+    color: black;
     }
 
     .container nav ul{
@@ -940,6 +952,13 @@ input::placeholder {
     padding-right: 30px;
     position: relative;
     bottom: 30px;
+}
+
+.navleft ul li a{
+color: white;
+}
+.navright ul li a{
+color: white;
 }
 
 .navleft ul li a:visited {
